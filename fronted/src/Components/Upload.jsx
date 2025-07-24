@@ -4,6 +4,7 @@ const Upload = () => {
   return (
     <div>
       <form action="/app" method="post" encType="multipart/form-data">
+        <label for="file">choose a file:</label>
         <input type="file" name="upload" />
         <button className="bg-pink-500 text-white p-2 rounded-md">
           upload image
@@ -12,6 +13,5 @@ const Upload = () => {
     </div>
   );
 };
-
 
 export default Upload;
