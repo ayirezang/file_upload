@@ -4,8 +4,10 @@ require("dotenv").config();
 const multer = require("multer");
 const { mongoose } = require("mongoose");
 const upload = multer({ dest: "uploads/" });
+const cors = require("cors");
 
 const app = express();
+app.use = cors();
 
 mongoose
   .connect(process.env.MONGO_DB)
